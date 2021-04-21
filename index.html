@@ -4,29 +4,90 @@
 <head>
   <meta charset="utf-8">
   <title>Regis Frey</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+      height: 100vh;
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    h1, h2, h3 {
+      margin: 0;
+      padding: 0
+    }
+    ul, li {
+      margin: 0;
+      padding: 4px 0;
+      list-style: none;
+    }
+    .avatar {
+        border-radius: 100%;
+        border: 10px solid #fff;
+        box-shadow: 0 0 10px #cccccc;
+        margin-top: -50px;
+    }
+    .card, .page {
+      width: 250px;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 30px;
+      margin-bottom: 30px;
+    }
+    .card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center; 
+    }
+    .work {
+      display: flex;
+      flex-direction: row;
+    }
+    .work .info {
+      display: flex;
+      flex-direction: column;
+    }
+    .work img {
+      width: 64px;
+      margin-right: 10px;
+    }
+  </style>
 </head>
 
 <body>
-  <header>
-    <img src="https://avatars.githubusercontent.com/u/156893?s=160&v=4" />
-    <h1>Regis Frey</h1>
-    <ul>
-      <li><a href="https://twitter.com/RegisFrey">@RegisFrey</a></li>
-      <li><a href="http://regisfrey.com">regisfrey.com</a></li>
-      <li><a href="https://regis-frey.itch.io/">regis-frey.itch.io</a></li>
-    </ul>
-  </header>
+  <div class="card">
+    <header>
+      <img class="avatar" src="https://avatars.githubusercontent.com/u/156893?s=160&v=4" />
+      <h1>Regis Frey</h1>
+      <ul>
+        <li><a href="https://github.com/sponsors/RegisFrey">💖 Tip Jar</a></li>
+        <li>〰〰</li>
+        <li><a href="https://twitter.com/RegisFrey">@RegisFrey</a></li>
+        <li><a href="http://regisfrey.com">regisfrey.com</a></li>
+        <li><a href="https://regis-frey.itch.io/">regis-frey.itch.io</a></li>
+      </ul>
+    </header>
+  </div>
   
-  <section>
+  <section class="page">
     <h2>Open Source Work</h2>
     
-    <ul>
-      <li>
+    <hr/>
+    
+    <ul class="works">
+      <li class="work">
         <img src="https://raw.githubusercontent.com/RegisFrey/NewDay/main/src/promo/NewDay-Icon.png" />
-        <h3>New Day</h3>
-        <a href="https://regisfrey.github.io/NewDay/">Website</a> ·&nbsp;
-        <a href="https://github.com/RegisFrey/NewDay">Source</a> ·&nbsp;
-        <a href="https://regisfrey.github.io/NewDay/#privacy-policy">Privacy Policy</a>
+        <div class="info">
+          <h3>New Day</h3>
+          <div class="links">
+            <a href="https://regisfrey.github.io/NewDay/">Website</a> ·
+            <a href="https://github.com/RegisFrey/NewDay">Source</a> ·
+            <a href="https://regisfrey.github.io/NewDay/#privacy-policy">Privacy Policy</a>
+          </div>
+        </div>
       </li>
     </ul>
   </section>
